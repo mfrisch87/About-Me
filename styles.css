@@ -1,7 +1,26 @@
 body {
+    width: 1024px;
+   display: grid;
+   grid-template-areas: 'head head head'
+   'side main main'
+   'side main main'
+   'foot foot foot';
+    margin: 0px 80px;
+    align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.0em;
     line-height: 1.5em;
+}
+.top {
+    grid-area: head;
+    display:grid;
+    grid-template-areas: 'tr tc tl'
+    'br bc bl';
+}
+
+navbar {
+    grid-area: bc;
+    float: right;
 }
 
 h1 {
@@ -31,10 +50,21 @@ a {
     height: auto;
 }
 
-.section {
+aside {
+   grid-area:side;
     float: left;
     border-right: solid 3px green;
     padding-right: 10px;
-    margin: 0px 20px;
+    margin: 0px 15px;
     height: auto;
 }
+
+
+.headsubtitle{
+    grid-area: bl;
+}
+/* .pieces {
+    display:grid;
+    grid-row-start: 2;
+} */
+
