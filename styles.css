@@ -10,20 +10,17 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    margin: 40px 400px;
+    margin: 40px 400px 10px;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.0em;
     line-height: 1.5em;
 }
+
 .top {
     display:flex;
     align-self: flex-start;
     justify-content: space-around;
-}
-
-navbar {
-    float: right;
 }
 
 h1 {
@@ -46,7 +43,7 @@ a {
 }
 .bigbox .preview {
    width: 100%;
-   height: 50%;
+   height:70%;
 }
 .smallbox {
     width: 50%;
@@ -54,11 +51,18 @@ a {
 }
 
 .smallbox .preview {
-    width:45%;
-    height:45%
+    width:80%;
+    height:70%
+}
+
+.bigbox h2 {
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 aside {
+    display:flex;
+    justify-content: flex-start;
     float: left;
     border-right: solid 3px green;
     padding-right: 10px;
@@ -72,4 +76,11 @@ aside {
 #work {
     display: flex;
     flex-wrap: wrap;
+}
+#bio {
+    display:flex;
+    justify-content: flex-end;
+}
+#contact a {
+    justify-content:space-between;
 }
