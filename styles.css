@@ -3,8 +3,7 @@ body {
    display: grid;
    grid-template-areas: 'head head head'
    'side main main'
-   'side main main'
-   'foot foot foot';
+   'sidebot mainbot mainbot';
     margin: 0px 80px;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,24 +32,22 @@ a {
     text-decoration: none;
 }
 
-.bigbox {
-    display: flex;
-    height: 400px;
-    width: 800px;
+.boxlinks {
+    position: absolute;
+    bottom: 15px;
 }
 
-.smallbox {
-    display: flex;
-    height: 200px;
-    width: 450px;
+.bigbox .preview {
+   width: 600px;
+   height: 200px;
+   grid-area: one;
+}
+.smallbox .preview {
+    width:300px;
+    height: 125px;
 }
 
-.preview {
-    width: 400px;
-    height: auto;
-}
-
-aside {
+.sectiontitle {
    grid-area:side;
     float: left;
     border-right: solid 3px green;
@@ -59,12 +56,33 @@ aside {
     height: auto;
 }
 
+#contact {
+    grid-area: mainbot;
+}
 
 .headsubtitle{
     grid-area: bl;
 }
-/* .pieces {
+
+.important {
+    grid-area:main;
+}
+#work {
     display:grid;
-    grid-row-start: 2;
-} */
+    grid-template-areas: 'top top'
+    'midleft midright'
+    'botleft botright';
+}
+#two {
+    grid-area: midleft;
+}
+#three  {
+    grid-area: midright;
+}
+#four {
+    grid-area: botleft;
+}
+#five {
+    grid-area botright;
+}
 
