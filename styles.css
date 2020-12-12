@@ -8,6 +8,7 @@ body {
     width: 1024px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     margin: 40px 400px;
     align-items: center;
@@ -18,6 +19,7 @@ body {
 .top {
     display:flex;
     align-self: flex-start;
+    justify-content: space-around;
 }
 
 navbar {
@@ -48,12 +50,15 @@ a {
     height: 125px;
 }
 
-.sectiontitle {
+aside {
     float: left;
     border-right: solid 3px green;
     padding-right: 10px;
     margin: 0px 15px;
     height: auto;
+}
+.pieces {
+
 }
 
 
@@ -61,24 +66,3 @@ a {
     width:1024px;
   align-self:center;
 }
-
-
-/*Link Buttons*/
-/* #work {
-    display:flex;
-} */
-/* #one {
-    grid-area: top;
-}
-#two {
-    grid-area: midleft;
-}
-#three  {
-    grid-area: midright;
-}
-#four {
-    grid-area: botleft;
-}
-#five {
-    grid-area: botright;
-} */
