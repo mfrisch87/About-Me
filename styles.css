@@ -1,23 +1,26 @@
+html {
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 400px;
+}
 body {
     width: 1024px;
-   display: grid;
-   grid-template-areas: 'head head head'
-   'main main main';
-    margin: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 400px;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.0em;
     line-height: 1.5em;
 }
 .top {
-    grid-area: head;
-    display:grid;
-    grid-template-areas: 'tr tc tl'
-    'br bc bl';
+    display:flex;
+    align-self: flex-start;
 }
 
 navbar {
-    grid-area: bc;
     float: right;
 }
 
@@ -36,17 +39,16 @@ a {
 }
 
 .bigbox .preview {
-   width: 600px;
+   width: 700px;
    height: 200px;
    grid-area: one;
 }
 .smallbox .preview {
-    width:300px;
+    width:350px;
     height: 125px;
 }
 
 .sectiontitle {
-   grid-area:side;
     float: left;
     border-right: solid 3px green;
     padding-right: 10px;
@@ -54,27 +56,19 @@ a {
     height: auto;
 }
 
-#contact {
-    grid-area: mainbot;
-}
-
-.headsubtitle{
-    grid-area: bl;
-}
 
 .important {
-    display:grid;
-    grid-area: main;
-    grid-template-areas: 'sidebar aboutmemain'
-    'sidebar workmain'
-    'sidebar contactmain';
+    width:1024px;
+  align-self:center;
 }
-#work {
-    display:grid;
-    grid-area:workmain;
-    grid-template-areas: 'top top'
-    'midleft midright'
-    'botleft botright';
+
+
+/*Link Buttons*/
+/* #work {
+    display:flex;
+} */
+/* #one {
+    grid-area: top;
 }
 #two {
     grid-area: midleft;
@@ -86,9 +80,5 @@ a {
     grid-area: botleft;
 }
 #five {
-    grid-area botright;
-}
-#bio {
-    grid-area: aboutmemain;
-}
-
+    grid-area: botright;
+} */
