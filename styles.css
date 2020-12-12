@@ -1,11 +1,11 @@
 html {
-    width: 1024px;
+    width: 85%;
     display: flex;
     justify-content: center;
     margin: 0px 400px;
 }
 body {
-    width: 1024px;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -58,11 +58,5 @@ aside {
     height: auto;
 }
 .pieces {
-
-}
-
-
-.important {
-    width:1024px;
-  align-self:center;
+    justify-content: flex-end;
 }
